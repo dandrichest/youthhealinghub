@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Help for Teens and Young Adults</title>
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Daniel Oyeniyi"
+    />
+    <meta name="author" content="Daniel Oyeniyi" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script defer src="scripts/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="header-left">
+          <img src="images/logo2.jpg" alt="Logo" class="logo" />
+          <h1 class="title">Help for Teens and Young Adults</h1>
+        </div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contact">
+        <h1>Contact Us</h1>
+        <form action="review.html" method="get">
+          <label for="Abuse">Kinds of Abuse:</label>
+          <select id="Abuse" name="Abuse" required>
+            <option value="Kinds of Abuse" disabled selected>Select a kind of Abuse ...</optio>
+          </select>
+            <label for="Vices">Kinds of Vices:</label>
+            <select id="Vices" name="Vices" required>
+              <option value="Kinds of Vices" disabled selected>Select a kind of Vices ...</option>
+          </select>
+          <label>Rate Our Intervention:</label>
+          <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5" title="5 stars">☆</label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="4 stars">☆</label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="3 stars">☆</label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="2 stars">☆</label>
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="1 star">☆</label>
+          </div>
+
+          <label for="firstDate">First Date of Abuse/Vices:</label>
+          <input
+            type="date"
+            id="firstDate"
+            name="firstDate"
+            autocomplete="off"
+            required
+          />
+
+          <label>Effect of Abuse/vices:</label>
+          <i>(Check all that apply)</i>
+          <div class="effect">
+            <label for="emotionalProblems">
+              <input
+                type="checkbox"
+                id="emotionalProblems"
+                name="effect"
+                value="Emotional Problems"
+              />
+              Emotional Problems
+            </label>
+            <label for="learningDisorders">
+              <input
+                type="checkbox"
+                id="learningDisorders"
+                name="effect"
+                value="Learning Disorders"
+              />
+              Learning Disorders
+            </label>
+            <label for="SexualPervasion">
+              <input
+                type="checkbox"
+                id="SexualPervasion"
+                name="effect"
+                value="Sexual Pervasion"
+              />
+              Sexual Pervasion
+            </label>
+            <label for="HealthIssues">
+              <input
+                type="checkbox"
+                id="HealthIssues"
+                name="effect"
+                value="Health Issues"
+              />
+              Health Issues
+            </label>
+          </div>
+
+          <label for="moreInfo"
+            >Please provide more information<i>(optional)</i></label
+          >
+          <textarea
+            id="moreInfo"
+            name="moreInfo"
+            rows="4"
+            cols="50"
+            autocomplete="off"
+          ></textarea>
+
+          <label for="userName">User Name<i>(optional)</i></label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            autocomplete="off"
+          /><br /><br />
+
+          <input type="submit" value="Post Data" />
+        </form>
+        <p id="review-counter"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p id="current-year">
+        &copy; 2025<span class="flower-symbol">✿</span>Daniel Oyeniyi<span
+          class="flower-symbol"
+          >✿</span
+        >Nigeria
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
